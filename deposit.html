@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit - Bad Bank Application</title>
+    <link rel="stylesheet" href="./styles/deposit.css">
+    <script src="script/deposit.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="Bad Bank Logo" class="logo">
+                <h1>Deposit</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="all-data.html">My page</a></li>
+                    <li><a href="withdrawal.html">withdrawal</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="deposit-form">
+                <h2>Deposit Funds</h2>
+                <form id="depositForm" action="index.html" method="POST">
+                    <div class="form-group">
+                        <label for="amount">Amount:</label>
+                        <input type="number" id="amount" name="amount" required>
+                    </div>
+                    <button type="submit">Deposit</button>
+                </form>
+                <div class="balance-info">
+                    <h3>Current Balance: <span id="balance">₹0.00</span></h3>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Bad Bank. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="deposit.js"></script>
+</body>
+</html>
